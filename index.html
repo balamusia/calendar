@@ -65,8 +65,14 @@ body {
   transition-duration: 0.2s;
 }
 .calendar .dates button.today {
-  box-shadow: inset 0px 0px 0px 2px #0a3d62;
+  box-shadow: inset 0px 0px 0px 2px red;
 }
+  
+.calendar .dates button.today:hover {
+  background-color: red;
+  color: white;
+}
+  
 .calendar .dates button:first-child {
   grid-column: 6;
 }
@@ -75,7 +81,7 @@ body {
   box-shadow: 5px 5px 5px black;
 }
 .calendar .dates button:focus {
-  background: #0a3d62;
+  background: red;
   color: #fff;
   font-weight: 600;
 }
